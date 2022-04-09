@@ -100,10 +100,7 @@ async def start_(c: Client, message: Message):
                     InlineKeyboardButton("❓ Bᴀsɪᴄ Gᴜɪᴅᴇ", callback_data="user_guide")
                 ],[
                     InlineKeyboardButton("📚 Cᴏᴍᴍᴀɴᴅs", callback_data="command_list"),
-                    InlineKeyboardButton("❤️ Dᴏɴᴀᴛᴇ", url=f"https://t.me/{OWNER_USERNAME}")
-                ],[
-                    InlineKeyboardButton("👥 Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{GROUP_SUPPORT}"),
-                    InlineKeyboardButton("📣 Uᴘᴅᴀᴛᴇs", url=f"https://t.me/{UPDATES_CHANNEL}")
+                    InlineKeyboardButton("❤️ Dᴏɴᴀᴛᴇ", url=f"https://t.me/{OWNER_USERNAME}")              
                 ],[
                     InlineKeyboardButton("🌐 Sᴏᴜʀᴄᴇ Cᴏᴅᴇ", url="https://github.com/levina-lab/video-stream")
                 ],
