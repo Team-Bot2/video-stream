@@ -85,8 +85,7 @@ async def start_(c: Client, message: Message):
     await add_served_user(user_id)
     await message.reply_text(
         f"""☞ ✰Hᴇʟʟᴏ...  ‌ {message.from_user.mention()} 👋🏻\n
-
-☞ ✰Iᴍ.. [{me_bot.first_name}](https://t.me/{me_bot.username}) is a bot to play music and video in groups, through the new Telegram video chats.
+☞ ✰Iᴍ.. [{me_bot.first_name}](https://t.me/{me_bot.username}) .
 
 ☞ ✰Tʜɪs ɪs Vɪᴅᴇᴏ + Mᴜsɪᴄ🎶 RᴏBᴏᴛ .. 
 
@@ -95,14 +94,15 @@ async def start_(c: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("➕ Aᴅᴅ Mᴇ Tᴏ Uʀ Gʀᴏᴜᴘ ➕", url=f"https://t.me/{me_bot.username}?startgroup=true")
-                ],[
-                    InlineKeyboardButton("❓ Bᴀsɪᴄ Gᴜɪᴅᴇ", callback_data="user_guide")
+                    InlineKeyboardButton("➕ Aᴅᴅ Mᴇ Tᴏ Uʀ Gʀᴏᴜᴘ ➕", url=f"https://t.me/{me_bot.username}?startgroup=true")               
                 ],[
                     InlineKeyboardButton("📚 Cᴏᴍᴍᴀɴᴅs", callback_data="command_list"),
-                    InlineKeyboardButton("❤️ Dᴏɴᴀᴛᴇ", url=f"https://t.me/{OWNER_USERNAME}")              
+                    InlineKeyboardButton("Bᴀsɪᴄ Iɴғᴏ ", url=f"https://t.me/{OWNER_USERNAME}")    
                 ],[
-                    InlineKeyboardButton("🌐 Sᴏᴜʀᴄᴇ Cᴏᴅᴇ", url="https://github.com/levina-lab/video-stream")
+                    InlineKeyboardButton("📨 Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{GROUP_SUPPORT}"),
+                    InlineKeyboardButton(" Uᴘᴅᴀᴛᴇs 📨", url=f"https://t.me/{UPDATES_CHANNEL}")
+                ],[
+                    InlineKeyboardButton("🛠️ Dᴇᴠᴇʟᴏᴘᴇʀ 🛠️", url="https://github.com/levina-lab/video-stream")
                 ],
             ]
         ),
