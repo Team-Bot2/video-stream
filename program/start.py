@@ -84,27 +84,28 @@ async def start_(c: Client, message: Message):
     user_id = message.from_user.id
     await add_served_user(user_id)
     await message.reply_text(
-        f"""Hi {message.from_user.mention()} 👋🏻\n
-💭 [{me_bot.first_name}](https://t.me/{me_bot.username}) is a bot to play music and video in groups, through the new Telegram video chats.
+        f"""☞ ✰Hᴇʟʟᴏ...  ‌ {message.from_user.mention()} 👋🏻\n
 
-🕵🏻 Check out all the **Bot's commands** and how they work by clicking on the » 📚 **Commands** button!
+☞ ✰Iᴍ.. [{me_bot.first_name}](https://t.me/{me_bot.username}) is a bot to play music and video in groups, through the new Telegram video chats.
 
-🧑🏻‍💻 To know how to use this bot, please click on the » ❓ **Basic Guide** button!
+☞ ✰Tʜɪs ɪs Vɪᴅᴇᴏ + Mᴜsɪᴄ🎶 RᴏBᴏᴛ .. 
+
+☞ ✰Fᴏʀ Mᴏʀᴇ Hᴇʟᴘ Usᴇ Bᴜᴛᴛᴏɴs Bᴇʟᴏᴡ Aɴᴅ Aʙᴏᴜᴛ Aʟʟ Fᴇᴀᴛᴜʀᴇ Oғ Tʜɪs Bᴏᴛ, Jᴜsᴛ Tyᴘᴇ /help .
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("➕ Add me to a Group ➕", url=f"https://t.me/{me_bot.username}?startgroup=true")
+                    InlineKeyboardButton("➕ Aᴅᴅ Mᴇ Tᴏ Uʀ Gʀᴏᴜᴘ ➕", url=f"https://t.me/{me_bot.username}?startgroup=true")
                 ],[
-                    InlineKeyboardButton("❓ Basic Guide", callback_data="user_guide")
+                    InlineKeyboardButton("❓ Bᴀsɪᴄ Gᴜɪᴅᴇ", callback_data="user_guide")
                 ],[
-                    InlineKeyboardButton("📚 Commands", callback_data="command_list"),
-                    InlineKeyboardButton("❤️ Donate", url=f"https://t.me/{OWNER_USERNAME}")
+                    InlineKeyboardButton("📚 Cᴏᴍᴍᴀɴᴅs", callback_data="command_list"),
+                    InlineKeyboardButton("❤️ Dᴏɴᴀᴛᴇ", url=f"https://t.me/{OWNER_USERNAME}")
                 ],[
-                    InlineKeyboardButton("👥 Support Group", url=f"https://t.me/{GROUP_SUPPORT}"),
-                    InlineKeyboardButton("📣 Support Channel", url=f"https://t.me/{UPDATES_CHANNEL}")
+                    InlineKeyboardButton("👥 Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{GROUP_SUPPORT}"),
+                    InlineKeyboardButton("📣 Uᴘᴅᴀᴛᴇs", url=f"https://t.me/{UPDATES_CHANNEL}")
                 ],[
-                    InlineKeyboardButton("🌐 Source Code", url="https://github.com/levina-lab/video-stream")
+                    InlineKeyboardButton("🌐 Sᴏᴜʀᴄᴇ Cᴏᴅᴇ", url="https://github.com/levina-lab/video-stream")
                 ],
             ]
         ),
