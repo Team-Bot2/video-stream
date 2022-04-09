@@ -93,16 +93,14 @@ async def start_(c: Client, message: Message):
 """,
         reply_markup=InlineKeyboardMarkup(
             [
-                [
-                    InlineKeyboardButton("➕ Aᴅᴅ Mᴇ Tᴏ Uʀ Gʀᴏᴜᴘ ➕", url=f"https://t.me/{me_bot.username}?startgroup=true")               
-                ],[
+                [                    
                     InlineKeyboardButton("📚 Cᴏᴍᴍᴀɴᴅs", callback_data="command_list"),
                     InlineKeyboardButton("Bᴀsɪᴄ Iɴғᴏ ", url=f"https://t.me/{OWNER_USERNAME}")    
                 ],[
                     InlineKeyboardButton("📨 Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{GROUP_SUPPORT}"),
                     InlineKeyboardButton(" Uᴘᴅᴀᴛᴇs 📨", url=f"https://t.me/{UPDATES_CHANNEL}")
                 ],[
-                    InlineKeyboardButton("🛠️ Dᴇᴠᴇʟᴏᴘᴇʀ 🛠️", url="https://github.com/levina-lab/video-stream")
+                    InlineKeyboardButton("➕ Aᴅᴅ Mᴇ Tᴏ Uʀ Gʀᴏᴜᴘ ➕", url=f"https://t.me/{me_bot.username}?startgroup=true")
                 ],
             ]
         ),
