@@ -10,8 +10,14 @@ from pyrogram.types import (
 def stream_markup(user_id):
   buttons = [
     [
-      InlineKeyboardButton(text="• Mᴇɴᴜ", callback_data=f'stream_menu_panel | {user_id}'),
-      InlineKeyboardButton(text="• Cʟᴏsᴇ", callback_data=f'set_close'),
+      InlineKeyboardButton(text="▢", callback_data=f'set_stop | {user_id}'),
+      InlineKeyboardButton(text="II", callback_data=f'set_pause | {user_id}'),
+      InlineKeyboardButton(text="▷", callback_data=f'set_resume | {user_id}'),
+      InlineKeyboardButton(text="‣‣I", callback_data=f'set_skip | {user_id}'),
+    ],
+    [
+      InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/UNIQUE_SOCIETY"),
+      InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs", url=f"https://t.me/TheMafiaSupport"),
     ],
   ]
   return buttons
@@ -20,10 +26,10 @@ def stream_markup(user_id):
 def menu_markup(user_id):
   buttons = [
     [
-      InlineKeyboardButton(text="⏹", callback_data=f'set_stop | {user_id}'),
-      InlineKeyboardButton(text="⏸", callback_data=f'set_pause | {user_id}'),
-      InlineKeyboardButton(text="▶️", callback_data=f'set_resume | {user_id}'),
-      InlineKeyboardButton(text="⏭", callback_data=f'set_skip | {user_id}'),
+      InlineKeyboardButton(text="▢", callback_data=f'set_stop | {user_id}'),
+      InlineKeyboardButton(text="II", callback_data=f'set_pause | {user_id}'),
+      InlineKeyboardButton(text="▷", callback_data=f'set_resume | {user_id}'),
+      InlineKeyboardButton(text="‣‣I", callback_data=f'set_skip | {user_id}'),
     ],
     [
       InlineKeyboardButton(text="🔇", callback_data=f'set_mute | {user_id}'),
