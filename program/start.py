@@ -95,15 +95,12 @@ async def start_(c: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [                    
-                    InlineKeyboardButton("📚 Cᴏᴍᴍᴀɴᴅs", callback_data="command_list"),
-                    InlineKeyboardButton("Bᴀsɪᴄ Iɴғᴏ ", callback_data="user_guide")    
+                    InlineKeyboardButton("👮🏼Basic cmd", callback_data="command_list"),
+                    InlineKeyboardButton("Basic Info👷🏻", callback_data="user_guide")    
                 ],[
-                    InlineKeyboardButton("• Cʜᴀᴛᴢᴏɴᴇ", url=f"https://t.me/LOVE_X_POISONS"),
-                    InlineKeyboardButton(" Cʜᴀᴛᴢᴏɴᴇ •", url=f"https://t.me/UNIQUE_SOCIETY")
-               ],[
-                    InlineKeyboardButton("📨 Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/BLAZE_SUPPORT"),
-                    InlineKeyboardButton(" Uᴘᴅᴀᴛᴇs 📨", url=f"https://t.me/THE_BLAZE_NETWORK")
-                ],[
+                    InlineKeyboardButton("🧑🏼‍💻 Support", url=f"https://t.me/{GROUP_SUPPORT}"),
+                    InlineKeyboardButton("Updates 📨", url=f"https://t.me/{UPDATES_CHANNEL}")
+               ],[                    
                     InlineKeyboardButton("➕ Aᴅᴅ Mᴇ Tᴏ Uʀ Gʀᴏᴜᴘ ➕", url=f"https://t.me/{me_bot.username}?startgroup=true")
                 ],
             ]
