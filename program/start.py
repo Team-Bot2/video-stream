@@ -79,37 +79,28 @@ async def _human_time_duration(seconds):
 @Client.on_message(
     command(["start", f"start@{BOT_USERNAME}"]) & filters.private & ~filters.edited
 )
-@check_blacklist()
-async def start_(c: Client, message: Message):
-    user_id = message.from_user.id
-    await add_served_user(user_id)
-    await message.reply_text(
-        f"""✨ **Welcome {message.from_user.mention()} !**\n
-💭 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **ALLOWS YOU TO PLAY MUSIC AND VIDEO ON GROUPS THROUGH THE NEW TELEGRAM'S VIDEO CHATS!!**
-
-💡 **FIND OUT ALL THE BOT'S COMMANDS AND HOW THEY WORK BY CLICKING ON THE » 📚  COMMANDS BUTTON!**
-
-🔖 **TO KNOW HOW TO USE THIS BOT, PLEASE CLICK ON THE » ❓ BASIC GUIDE BUTTON!**
-"""
-   ,
+async def text_(client: Client, message: Message):
+    await message.reply_photo(
+        photo=f"https://telegra.ph/file/b8dd014a2cf7817df23a1.jpg",           
+        caption=f""" **☞ ✰Hello friends how are you !**\n
+☞ **✰I'am.. [Music Player Bot](https://t.me/{BOT_USERNAME}) !**
+🂱 **I Can Play Music In Your Group.Feel free to add me to your groups.!**
+""",
         reply_markup=InlineKeyboardMarkup(
             [
-                [                    
-                    InlineKeyboardButton("📚 Cᴏᴍᴍᴀɴᴅs", callback_data="command_list"),
-                    InlineKeyboardButton("Bᴀsɪᴄ Iɴғᴏ ", callback_data="user_guide")    
+                [
+                    InlineKeyboardButton("👷🏻 Basic Cmd", callback_data="command_list"),
+                    InlineKeyboardButton("Basic Info 📚", callback_data="user_guide"),
                 ],[
-                    InlineKeyboardButton("• Cʜᴀᴛᴢᴏɴᴇ", url=f"https://t.me/LOVE_X_POISONS"),
-                    InlineKeyboardButton(" Cʜᴀᴛᴢᴏɴᴇ •", url=f"https://t.me/UNIQUE_SOCIETY")
-               ],[
-                    InlineKeyboardButton("📨 Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/BLAZE_SUPPORT"),
-                    InlineKeyboardButton(" Uᴘᴅᴀᴛᴇs 📨", url=f"https://t.me/THE_BLAZE_NETWORK")
+                    InlineKeyboardButton("👷🏻 Support", url=f"https://t.me/{GROUP_SUPPORT}"),
+                    InlineKeyboardButton("Channel 👮🏼", url=f"https://t.me/{UPDATES_CHANNEL}"),
                 ],[
-                    InlineKeyboardButton("➕ Aᴅᴅ Mᴇ Tᴏ Uʀ Gʀᴏᴜᴘ ➕", url=f"https://t.me/{me_bot.username}?startgroup=true")
+                    InlineKeyboardButton("Summon me", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+              
                 ],
             ]
         ),
-        disable_web_page_preview=True,
-    )
+   )
 
 
 @Client.on_message(
