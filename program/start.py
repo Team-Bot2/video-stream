@@ -89,17 +89,17 @@ async def start_(c: Client, message: Message):
 
 ☞ ✰Tʜɪs ɪs Vɪᴅᴇᴏ + Mᴜsɪᴄ🎶 RᴏBᴏᴛ .. 
 
-☞ ✰Fᴏʀ Mᴏʀᴇ Hᴇʟᴘ Usᴇ Bᴜᴛᴛᴏɴs Bᴇʟᴏᴡ Aɴᴅ Aʙᴏᴜᴛ Aʟʟ Fᴇᴀᴛᴜʀᴇ Oғ Tʜɪs Bᴏᴛ, Jᴜsᴛ Tyᴘᴇ /help .
+☞ ✰Fᴏʀ Mᴏʀᴇ Hᴇʟᴘ Usᴇ Bᴜᴛᴛᴏɴs Bᴇʟᴏᴡ Aɴᴅ Aʙᴏᴜᴛ Aʟʟ Fᴇᴀᴛᴜʀᴇ Oғ Tʜɪs Bᴏᴛ.
 
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [                    
-                    InlineKeyboardButton("📚 Cᴏᴍᴍᴀɴᴅs", callback_data="command_list"),
-                    InlineKeyboardButton("Bᴀsɪᴄ Iɴғᴏ ", callback_data="user_guide")    
+                    InlineKeyboardButton("🧑🏼‍💻 Bᴀsɪᴄ Cᴍᴅ", callback_data="command_list"),
+                    InlineKeyboardButton("Bᴀsɪᴄ Iɴғᴏ 👷🏻", callback_data="user_guide")    
                 ],[
-                    InlineKeyboardButton("• Cʜᴀᴛᴢᴏɴᴇ", url=f"https://t.me/LOVE_X_POISONS"),
-                    InlineKeyboardButton(" Cʜᴀᴛᴢᴏɴᴇ •", url=f"https://t.me/UNIQUE_SOCIETY")
+                    InlineKeyboardButton("🔖 Gʀᴏᴜᴘs", url=f"https://t.me/{GROUP_SUPPORT}"),
+                    InlineKeyboardButton("Cʜᴀɴɴᴇʟ 📨", url=f"https://t.me/{UPDATES_CHANNEL}")
                ],[                   
                     InlineKeyboardButton("➕ Aᴅᴅ Mᴇ Tᴏ Uʀ Gʀᴏᴜᴘ ➕", url=f"https://t.me/{me_bot.username}?startgroup=true")
                 ],
