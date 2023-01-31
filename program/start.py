@@ -100,10 +100,7 @@ async def start_(c: Client, message: Message):
                 ],[
                     InlineKeyboardButton("• Cʜᴀᴛᴢᴏɴᴇ", url=f"https://t.me/LOVE_X_POISONS"),
                     InlineKeyboardButton(" Cʜᴀᴛᴢᴏɴᴇ •", url=f"https://t.me/UNIQUE_SOCIETY")
-               ],[
-                    InlineKeyboardButton("📨 Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/BLAZE_SUPPORT"),
-                    InlineKeyboardButton(" Uᴘᴅᴀᴛᴇs 📨", url=f"https://t.me/THE_BLAZE_NETWORK")
-                ],[
+               ],[                   
                     InlineKeyboardButton("➕ Aᴅᴅ Mᴇ Tᴏ Uʀ Gʀᴏᴜᴘ ➕", url=f"https://t.me/{me_bot.username}?startgroup=true")
                 ],
             ]
