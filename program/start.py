@@ -90,6 +90,8 @@ async def start_(c: Client, message: Message):
 ☞ ✰Tʜɪs ɪs Vɪᴅᴇᴏ + Mᴜsɪᴄ🎶 RᴏBᴏᴛ .. 
 
 ☞ I Cᴀɴ Pʟᴀʏ Mᴜsɪᴄ Iɴ Yᴏᴜʀ Gʀᴏᴜᴘ.
+
+» Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ :- [🍻ᯓ𝐌 𝚫 𝐇 𝐈ˢ ͪᵘ ᷜˡ ⷶ™🇮🇳](t.me/official_pro_xD).
 """,
         reply_markup=InlineKeyboardMarkup(
             [
