@@ -102,11 +102,11 @@ async def start_(c: Client, message: Message):
                     InlineKeyboardButton("Channel 👮🏼", url=f"https://t.me/{UPDATES_CHANNEL}"),
                 ],[
                     InlineKeyboardButton("Summon me", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+              
                 ],
             ]
         ),
-        disable_web_page_preview=True,
-    )
+   )
 
 
 @Client.on_message(
